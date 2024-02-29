@@ -1,35 +1,39 @@
 import React, { useEffect, useRef } from "react"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
+import { faEnvelope, faX } from "@fortawesome/free-solid-svg-icons"; 
 import { 
  faGithub, 
+ faInstagram, 
  faLinkedin, 
  faMedium, 
- faStackOverflow, 
+ faSquareTwitter, 
+ faStackOverflow,
+ faTwitter,
+ faTwitterSquare, 
 } from "@fortawesome/free-brands-svg-icons"; 
 import { Box, HStack } from "@chakra-ui/react"; 
  
 const socials = [ 
  { 
    icon: faEnvelope, 
-   url: "mailto: hello@example.com", 
+   url: "mailto: sachdevaaryan00@gmail.com", 
  }, 
  { 
    icon: faGithub, 
-   url: "https://www.github.com/sureskills", 
+   url: "https://www.github.com/aryan-sdva", 
  }, 
  { 
    icon: faLinkedin, 
-   url: "https://www.linkedin.com/in/sureskills/", 
+   url: "https://www.linkedin.com/in/aryan-sachdeva-5a25551b4/", 
  }, 
  { 
-   icon: faMedium, 
-   url: "https://medium.com/@sureskills", 
+   icon: faInstagram, 
+   url: "https://www.instagram.com/ary.nn__/", 
  }, 
- { 
-   icon: faStackOverflow, 
-   url: "https://stackoverflow.com/users/sureskills", 
- }, 
+ {
+  icon: faTwitter,
+  url: "https://twitter.com/AryanSdva/with_replies",
+ }
 ]; 
 
 
@@ -73,17 +77,18 @@ const Header = () => {
    <Box 
      position="absolute"
      top={5} 
-     left={80} 
-     right={80} 
+     left={"20%"} 
+     right={"20%"} 
      borderRadius={40}
      translateY={0} 
      transitionProperty="unset"
      transitionDuration=".3s" 
      //transitionTimingFunction="ease-in-out" 
-     backgroundColor="#0B1354" 
+     backgroundColor="black" 
+     boxShadow={"5px 5px 30px whitesmoke"}
      ref={headerRef} 
    > 
-     <Box color="yellow" 
+     <Box color="whitesmoke" 
      maxWidth="1280px" 
      margin="0 auto"> 
        <HStack 
@@ -93,7 +98,7 @@ const Header = () => {
          alignItems="center" 
        > 
          <nav> 
-           <HStack spacing={8}> 
+           <HStack spacing={"10%"}> 
              {socials.map(({ icon, url }) => ( 
                <a 
                  key={url} 
@@ -107,13 +112,14 @@ const Header = () => {
            </HStack> 
          </nav> 
          <nav> 
-           <HStack spacing={8}> 
+           <HStack spacing={8} color={"whitesmoke"} 
+           fontFamily={"outfit"} fontWeight={"bold"} fontSize={"2x"}> 
              <a ƒhref="#projects" onClick={handleClick("projects")}> 
-               Projects 
+               PROJECTS
              </a> 
              <a href="#contactme" onClick={handleClick("contactme")}> 
-               Contact Me 
-             </a> 
+               CONTACT ME
+             </a>
            </HStack> 
          </nav> 
        </HStack> 

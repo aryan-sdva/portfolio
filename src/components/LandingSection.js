@@ -19,29 +19,34 @@ const LandingSection = () => (
       src={myphoto}
       alt={"logo"}
       size="2xl"
-      style={{width : '200px' ,height :'200px'}}
+      style={{width : '30%' ,height :'30%'}}
       >
      </Avatar>
        <Heading 
       height="50px"
-      color="#0B1354" 
+      color="#faa300"
+      textShadow={"5px 3px 8px #114232"} 
        fontWeight="extrabold"
-       fontFamily="inherit"
+       fontFamily="space grotesk"
        fontStyle="normal" 
-       as="h4" size="2xl" 
+       as="h4" size={"2xl"} 
        noOfLines={2}> 
          {greeting} 
        </Heading> 
      </VStack> 
      <VStack spacing={6}> 
        <Heading 
-       color="yellow"
+       color="#f7f6bb"
+       fontFamily={"space grotesk"}
+       textShadow={"5px 3px 8px #114232"} 
        as="h1" size="3xl" 
        noOfLines={1}> 
          {bio1} 
        </Heading> 
        <Heading 
-       color="yellow"
+       color="#f7f6bb"
+       fontFamily={"space grotesk"}
+       textShadow={"5px 3px 8px #114232"}
        as="h1" size="3xl" 
        noOfLines={1}> 
          {bio2} 

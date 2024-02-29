@@ -28,6 +28,18 @@ const projects = [
      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps", 
    getImageSrc: () => require("../images/photo4.jpg"), 
  }, 
+ { 
+  title: "React Space", 
+  description: 
+    "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
+  getImageSrc: () => require("../images/photo1.jpg"), 
+}, 
+{ 
+  title: "React Space", 
+  description: 
+    "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
+  getImageSrc: () => require("../images/photo1.jpg"), 
+}, 
 ]; 
  
 const ProjectsSection = () => { 
@@ -43,7 +55,7 @@ const ProjectsSection = () => {
      </Heading> 
      <Box 
        display="grid" 
-       gridTemplateColumns="repeat(2,minmax(0,1fr))" 
+       gridTemplateColumns="repeat(3,minmax(0,1fr))" 
        gridGap={8} 
      > 
        {projects.map((project) => ( 
