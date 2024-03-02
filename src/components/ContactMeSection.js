@@ -54,11 +54,10 @@ const ContactMeSection = () => {
  
  return ( 
    <FullScreenSection 
-
-     py={16} 
      spacing={8} 
    > 
-     <VStack w="1024px" p={32} alignItems="flex-start"> 
+
+      <VStack w="100vw" p={2} alignItems="flex-start"> 
        <Heading as="h1" id="contactme-section"> 
          Contact me 
        </Heading> 
@@ -110,7 +109,7 @@ const ContactMeSection = () => {
            </VStack> 
          </form> 
        </Box> 
-     </VStack> 
+     </VStack>
    </FullScreenSection> 
  ); 
 }; 

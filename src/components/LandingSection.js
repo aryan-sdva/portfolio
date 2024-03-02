@@ -1,7 +1,8 @@
 import React from "react"; 
-import { Avatar, Box, extendTheme, Heading, VStack } from "@chakra-ui/react"; 
+import { Avatar, Box, Circle, extendTheme, Heading, VStack } from "@chakra-ui/react"; 
 import FullScreenSection from "./FullScreenSection"; 
 import myphoto from '../images/myphoto.jpg';
+import newphoto from '../images/newphoto.jpg';
 import background from '../images/background.jpg';
  
 const greeting = "Hey, I am Aryan Sachdeva"; 
@@ -13,41 +14,43 @@ const LandingSection = () => (
    justifyContent="center" 
    alignItems="center" 
  > 
-   <VStack spacing={16}> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+   <VStack spacing={5} > 
      <VStack spacing={4} alignItems="center"> 
      <Avatar
-      src={myphoto}
-      alt={"logo"}
-      size="2xl"
-      style={{width : '30%' ,height :'30%'}}
+      src={myphoto} 
+      alt={"logo"} 
+      name="Aryan Sachdeva" 
+      width={"40%"}
+      height={"40%"}
       >
      </Avatar>
-       <Heading 
+     <Heading 
       height="50px"
-      color="#faa300"
-      textShadow={"5px 3px 8px #114232"} 
+      color="black"
+      textShadow={"5px 3px 4px lightblue"} 
        fontWeight="extrabold"
        fontFamily="space grotesk"
        fontStyle="normal" 
-       as="h4" size={"2xl"} 
+       as="h4"
        noOfLines={2}> 
          {greeting} 
        </Heading> 
      </VStack> 
-     <VStack spacing={6}> 
+     <VStack spacing={1}> 
        <Heading 
-       color="#f7f6bb"
+       color="black"
        fontFamily={"space grotesk"}
-       textShadow={"5px 3px 8px #114232"} 
-       as="h1" size="3xl" 
-       noOfLines={1}> 
+       textShadow={"5px 3px 4px lightblue"} 
+       as="h1" /* size="3xl" */ 
+       noOfLines={2}> 
          {bio1} 
        </Heading> 
        <Heading 
-       color="#f7f6bb"
+       color="black"
        fontFamily={"space grotesk"}
-       textShadow={"5px 3px 8px #114232"}
-       as="h1" size="3xl" 
+       textShadow={"5px 3px 4px lightblue"}
+       as="h1" /* size="3xl" */ 
        noOfLines={1}> 
          {bio2} 
        </Heading> 
