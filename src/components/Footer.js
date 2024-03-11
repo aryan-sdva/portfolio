@@ -1,16 +1,13 @@
 import React from "react"; 
-import {Box, Flex, HStack} from "@chakra-ui/react"; 
+import {Box, Flex, Grid, HStack, VStack} from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faEnvelope, faX } from "@fortawesome/free-solid-svg-icons"; 
 import { 
  faGithub, 
  faInstagram, 
  faLinkedin, 
- faMedium, 
- faSquareTwitter, 
- faStackOverflow,
  faTwitter,
- faTwitterSquare, 
 } from "@fortawesome/free-brands-svg-icons"; 
 
 const socials = [ 
@@ -37,22 +34,26 @@ const socials = [
  ]; 
 const Footer = () => { 
  return ( 
-   <Box backgroundColor="blackAlpha.800"> 
-     <footer> 
-       <Flex 
-         margin="0 auto" 
-         px={12} 
+       <Flex
+         as="nav"
+         //position={"fixed"}
          color="whitesmoke" 
-         fontSize={"xl"}
          fontFamily={"space grotesk"}
+         fontWeight={"extrabold"}
+         fontSize={[15,15,20,20]}
          justifyContent="center" 
          alignItems="center" 
-         maxWidth="1024px" 
-         height={200} 
+         w={["95%","95%","98%","98%"]}
+         ml={["2.5%","2.5%","1%","1%"]}
+         mb={5}
+         height={100} 
+         bg="rgba(0,0,0,0.7)" 
+         borderRadius={4}
        > 
-        <HStack>
-         <nav> 
-           <HStack spacing={3}> 
+        <VStack>
+          <p>Socials:</p>
+          <nav> 
+            <HStack spacing={[3,4,4,5]}> 
              {socials.map(({ icon, url }) => ( 
                <a 
                  key={url} 
@@ -60,16 +61,16 @@ const Footer = () => {
                  target="_blank" 
                  rel="noopener noreferrer" 
                > 
-                 <FontAwesomeIcon icon={icon} size="2x" key={url} /> 
+                <FontAwesomeIcon icon={icon} size="xl" key={url} /> 
                </a> 
              ))} 
-           </HStack> 
-         </nav> 
-         <p>Aryan Sachdeva • © 2024</p> 
-         </HStack>  
+            </HStack> 
+          </nav> 
+        <VStack>
+          <p>Aryan Sachdeva • © 2024</p> 
+        </VStack>
+        </VStack>
        </Flex> 
-     </footer> 
-   </Box> 
  ); 
 }; 
  

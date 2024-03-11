@@ -1,8 +1,7 @@
 import React from "react"; 
 import { Avatar, Box, Circle, extendTheme, Heading, VStack } from "@chakra-ui/react"; 
 import FullScreenSection from "./FullScreenSection"; 
-import myphoto from '../images/myphoto.jpg';
-import newphoto from '../images/newphoto.jpg';
+import myphoto2 from '../images/myphoto2.jpg';
 import background from '../images/background.jpg';
  
 const greeting = "Hey, I am Aryan Sachdeva"; 
@@ -18,11 +17,16 @@ const LandingSection = () => (
    <VStack spacing={5} > 
      <VStack spacing={4} alignItems="center"> 
      <Avatar
-      src={myphoto} 
+      src={myphoto2} 
       alt={"logo"} 
       name="Aryan Sachdeva" 
-      width={"40%"}
-      height={"40%"}
+      zIndex={50}
+      borderWidth={5}
+      borderColor={"whitesmoke"}
+      boxShadow={" 0px -25px 20px -20px rgba(0,0,0,0.7),25px 0px 20px -20px rgba(0,0,0,0.7),0px 25px 20px -20px rgba(0,0,0,1),-25px 0px 20px -20px rgba(0,0,0,0.7)"}
+      //width={["45%","30%","25%","25%"]}
+      //height={["45%","30%","25%","25%"]}
+      width={[180,200]} height={[180,200]}
       >
      </Avatar>
      <Heading 
