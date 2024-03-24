@@ -104,7 +104,7 @@ const MenuLinks = ({ isOpen }) => {
       flexBasis={{ base: "100%", md: "auto" }}
     >
       <Stack
-        spacing={8}
+        spacing={[6,6,8,8]}
         align="center"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
@@ -116,7 +116,7 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/pricing">Pricing </MenuItem>
         <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/signup" isLast>
           <Button
-            size="sm"
+            size={["sm","xs","sm","sm"]}
             rounded="md"
             color={["purple.500", "purple.500", "purple.500", "rgba(0,0,0, 0.7)"]}
             bg={["white", "white", "white", "white"]}

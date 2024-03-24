@@ -1,14 +1,15 @@
 import React from "react"; 
 import {Box, Flex, Grid, HStack, VStack} from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/react"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faEnvelope, faX } from "@fortawesome/free-solid-svg-icons"; 
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { faEnvelope} from "@fortawesome/free-solid-svg-icons"; 
 import { 
  faGithub, 
  faInstagram, 
- faLinkedin, 
- faTwitter,
+ faLinkedin,
+ faTwitter, 
 } from "@fortawesome/free-brands-svg-icons"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const socials = [ 
   { 
@@ -34,44 +35,59 @@ const socials = [
  ]; 
 const Footer = () => { 
  return ( 
-       <Flex
-         as="nav"
-         //position={"fixed"}
+  <Grid    
+         pt={[3,3,3,3]}
+         pb={0}
          color="whitesmoke" 
-         fontFamily={"space grotesk"}
-         fontWeight={"extrabold"}
-         fontSize={[15,15,20,20]}
-         justifyContent="center" 
-         alignItems="center" 
-         w={["95%","95%","98%","98%"]}
+         position={"relative"}
+         //bottom={10}
+         //wrap="wrap"
+         //fontFamily={"space grotesk"}
+         //fontWeight={"extrabold"}
+         //justifyContent="center" 
+         alignContent="space-between" 
+         w={["95vw","95vw","98vw","98vw"]}
          ml={["2.5%","2.5%","1%","1%"]}
-         mb={5}
-         height={100} 
-         bg="rgba(0,0,0,0.7)" 
-         borderRadius={4}
-       > 
-        <VStack>
-          <p>Socials:</p>
-          <nav> 
-            <HStack spacing={[3,4,4,5]}> 
-             {socials.map(({ icon, url }) => ( 
-               <a 
+         mb={2}
+         height={"15vh"} 
+         bgColor={"grey"}
+         //borderRadius={"0.5rem"}
+         >
+  
+          <Flex 
+          justify={"space-between"}
+          ml={5}
+          mr={5}
+          fontFamily={"space grotesk"}
+          fontWeight={"extrabold"}
+          fontSize={[20,18,20,25]}
+          >
+          <HStack justify={"center"} align={"start"}>
+          <h1>Socials:</h1>
+          {/* <h2>Reach out to me here <FaArrowAltCircleRight/></h2> */}
+          </HStack>
+
+          <HStack spacing={[3,4,4,5]}> 
+            {socials.map(({ icon, url}) => ( 
+              <a 
                  key={url} 
                  href={url} 
                  target="_blank" 
                  rel="noopener noreferrer" 
-               > 
-                <FontAwesomeIcon icon={icon} size="xl" key={url} /> 
-               </a> 
+              > 
+                <FontAwesomeIcon icon={icon} key={url} /> 
+              </a> 
              ))} 
-            </HStack> 
-          </nav> 
-        <VStack>
+          </HStack>
+          </Flex>
+          <Grid 
+          justifyContent={"center"}
+          alignContent={"center"}
+          fontSize={[16,16,18,20]}>
           <p>Aryan Sachdeva • © 2024</p> 
-        </VStack>
-        </VStack>
-       </Flex> 
- ); 
+          </Grid>
+</Grid>
+ );
 }; 
  
 export default Footer; 

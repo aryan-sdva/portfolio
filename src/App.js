@@ -15,10 +15,10 @@ function App() {
        <main> 
          <NavBar/> 
          <LandingSection/> 
-         <ProjectsSection /> 
-         <ContactMeSection /> 
-         <Footer /> 
-         <Alert /> 
+         <ProjectsSection/>  
+         <ContactMeSection/>
+         <Footer/> 
+         <Alert/> 
        </main> 
      </AlertProvider> 
    </ChakraProvider> 

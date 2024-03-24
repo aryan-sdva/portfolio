@@ -2,7 +2,7 @@ import React from "react";
 import FullScreenSection from "./FullScreenSection"; 
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react"; 
 import Card from "./Card"; 
- 
+import background from "../images/background.jpg";
 const projects = [ 
  { 
    title: "React Space", 
@@ -47,13 +47,12 @@ const ProjectsSection = () => {
    <FullScreenSection  
      p={8} 
      alignItems="flex-start" 
-     spacing={8} 
-    
+     spacing={8}
    > 
      <Heading as="h1" id="projects-section"> 
        Featured Projects 
      </Heading> 
-     <SimpleGrid columns={[1,2,3]} spacing={5}> 
+     <SimpleGrid columns={[1,1,2,3]} spacing={5}> 
        {projects.map((project) => ( 
          <Card 
            key={project.title} 
