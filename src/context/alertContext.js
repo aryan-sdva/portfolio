@@ -4,7 +4,7 @@ const AlertContext = createContext(undefined);
 
 export const AlertProvider = ({ children }) => { 
   const [state, setState] = useState({ 
-    isOpen: false, 
+    isopen: false, 
     type: 'success', 
     message: '', 
   }); 
@@ -13,8 +13,8 @@ export const AlertProvider = ({ children }) => {
     <AlertContext.Provider 
       value={{ 
         ...state, 
-        onOpen: (type, message) => setState({ isOpen: true, type, message }), 
-        onClose: () => setState({ isOpen: false, type: '', message: '' }), 
+        onOpen: (type, message) => setState({ isopen: true, type, message }), 
+        onClose: () => setState({ isopen: false, type: '', message: '' }), 
       }} 
     > 
       {children} 

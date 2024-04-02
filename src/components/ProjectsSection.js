@@ -5,16 +5,16 @@ import Card from "./Card";
 import background from "../images/background.jpg";
 const projects = [ 
  { 
-   title: "React Space", 
+   title: "Basic Calculator", 
    description: 
-     "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
-   getImageSrc: () => require("../images/photo1.jpg"), 
+     "A basic calculator built with React, just to showcase and practice everything I learned in the initial days of my Frontend Development journey. It can perform basic arithmetic calculations instantly.", 
+   getImageSrc: () => require("../images/calc.jpg"), 
  }, 
  { 
-   title: "React Infinite Scroll", 
-   description: 
-     "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️", 
-   getImageSrc: () => require("../images/photo2.jpg"), 
+   title: "First application of HTML/CSS", 
+   description:
+    "This HTML and CSS file marked my early steps in web development. I crafted a basic layout using HTML tags and styled it with CSS, delving into selectors to customize colors, fonts, and layout, igniting my journey into the world of web development.",
+   getImageSrc: () => require("../images/epl.jpg"), 
  }, 
  { 
    title: "Photo Gallery", 

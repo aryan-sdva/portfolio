@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack, AbsoluteCenter, transition, Collapse, useDisclosure } from "@chakra-ui/react";
+import { Link, Box, Flex, Text, Button, Stack, AbsoluteCenter, transition, Collapse, useDisclosure, LinkBox } from "@chakra-ui/react";
 import { FaMoon } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { TiThMenu } from "react-icons/ti";
@@ -8,51 +8,15 @@ import newnew from "../images/newnew.jpg";
 import gradient from "../images/gradient.jpeg";
 import Logo from "../extra/Logo";
 
-/* const headerRef = useRef(null); 
- 
-useEffect(() => { 
-  let prevScrollPos = window.scrollY; 
-
-  const handleScroll = () => { 
-    const currentScrollPos = window.scrollY; 
-    const headerElement = headerRef.current; 
-    if (!headerElement) { 
-      return; 
-    } 
-    if (prevScrollPos > currentScrollPos) { 
-      headerElement.style.transform = "translateY(0)"; 
-    } else { 
-      headerElement.style.transform = "translateY(0)"; 
-    } 
-    prevScrollPos = currentScrollPos; 
-  } 
-  window.addEventListener('scroll', handleScroll) 
-
-  return () => { 
-    window.removeEventListener('scroll', handleScroll) 
-  } 
-}, []); 
-
-const handleClick = (anchor) => () => { 
-  const id = `${anchor}-section`; 
-  const element = document.getElementById(id); 
-  if (element) { 
-    element.scrollIntoView({ 
-      behavior: "smooth", 
-      block: "start", 
-    }); 
-  } 
-};  */
-
 const NavBar = (props) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const [isopen, setisopen] = React.useState(false);
+  const toggle = () => setisopen(!isopen);
 
   return (
-    <NavBarContainer isOpen={isOpen} {...props}>
+    <NavBarContainer isopen={isopen} {...props}>
       <FaMoon size={28}/>
-        <MenuToggle toggle={toggle} isOpen={isOpen}/>
-      <MenuLinks isOpen={isOpen} />
+        <MenuToggle toggle={toggle} isopen={isopen}/>
+      <MenuLinks isopen={isopen} />
     </NavBarContainer>
   );
 };
@@ -79,15 +43,15 @@ const NavBar = (props) => {
   </svg>
 ); */
 
-const MenuToggle = ({ toggle, isOpen }) => {
+const MenuToggle = ({ toggle, isopen }) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <IoClose size={32}/> : <TiThMenu size={32}/>}
+      {isopen ? <IoClose size={32}/> : <TiThMenu size={32}/>}
     </Box>
   );
 };
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+/* const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
     <Link href={to}>
       <Text display="block" {...rest}>
@@ -95,38 +59,46 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
       </Text>
     </Link>
   );
-};
+}; */
 
-const MenuLinks = ({ isOpen }) => {
+const MenuLinks = ({ isopen }) => {
+  
+  const handleClick = (anchor) => () => { 
+    const id = `${anchor}-section`; 
+    const element = document.getElementById(id); 
+    if (element) { 
+      element.scrollIntoView({ 
+        behavior: "smooth", 
+        block: "start", 
+      }); 
+    } 
+  }; 
   return (
     <Box
-      display={{ base: isOpen ? "block" : "none", md: "block" }}
+      display={{ base: isopen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
     >
       <Stack
-        spacing={[6,6,8,8]}
+        spacing={[6,6,4,4]}
         align="center"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
+        pr={[0,0,0,4]}
+        fontFamily="kanit"
       >
-        <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/">Home</MenuItem>
-        <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/projects">Projects</MenuItem>
-        <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/faetures">Features </MenuItem>
-        <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/pricing">Pricing </MenuItem>
-        <MenuItem color="white" fontFamily="space grotesk" fontWeight="bold" to="/signup" isLast>
-          <Button
-            size={["sm","xs","sm","sm"]}
-            rounded="md"
-            color={["purple.500", "purple.500", "purple.500", "rgba(0,0,0, 0.7)"]}
-            bg={["white", "white", "white", "white"]}
-            _hover={{
-                bg: ["purple.100", "purple.100", "purple.100", "green.100"]
-              }}
-          >
-            Create Account
-          </Button>
-        </MenuItem>
+        <a href="#landing" onClick={handleClick("landing")}>
+          <Button bg={"transparent"} _hover={{bg:["#093145"]}} fontSize={18}>Home</Button>
+        </a>
+        <a href="#projects" onClick={handleClick("projects")}>
+          <Button bg={"transparent"} _hover={{bg:["#093145"]}} fontSize={18}>Projects</Button>
+        </a> 
+        <a href="#contactme" onClick={handleClick("contactme")}>
+          <Button bg={"transparent"} _hover={{bg:["#093145"]}} fontSize={18}>Contact</Button>
+        </a>
+        <a href="#socials" onClick={handleClick("socials")}>
+          <Button bg={"trnasparent"} _hover={{bg:["#093145"]}} fontSize={18}>Socials</Button>
+        </a>
       </Stack>
     </Box>
   );
@@ -145,11 +117,13 @@ const NavBarContainer = ({ children, ...props }) => {
       mt={[2,2,3,3]}
       ml={["2.5%","2.5%","1%","1%"]}
       transition={" 0.5s ease-in-out"}
-      borderRadius={[20,20,20,20]}
+      borderRadius={20}
       p={[4,4,6,6]}
       bg={'rgba(0,0,0, 0.7)'}
       backdropFilter={"blur(20px)"}
-      color={["white", "white", "white", "yellow.200"]}
+      color="whitesmoke"
+      fontStyle="space-grotesk"
+      fontWeight="bold"
       {...props}
     >
       {children}

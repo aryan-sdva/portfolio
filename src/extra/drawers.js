@@ -40,7 +40,7 @@ import { Drawer, DrawerBody, DrawerFooter, DrawerHeader,
 export default function DrawerExample({
   placement = "right",
   width,
-  isOpen,
+  isopen,
   children,
   onClose,
   btnRef,
@@ -50,7 +50,7 @@ export default function DrawerExample({
   return (
     <Flex w={width}>
       <Drawer
-        isOpen={isOpen}
+        isopen={isopen}
         placement={placement}
         onClose={onClose}
         finalFocusRef={btnRef}

@@ -9,13 +9,13 @@ import {
  import { useRef } from "react"; 
   
  function Alert() { 
-  const { isOpen, type, message, onClose } = useAlertContext(); 
+  const { isopen, type, message, onClose } = useAlertContext(); 
   const cancelRef = useRef(); 
   const isSuccess = type === "success" 
   
   return ( 
     <AlertDialog 
-      isOpen={isOpen} 
+      isopen={isopen} 
       leastDestructiveRef={cancelRef} 
       onClose={onClose} 
     > 

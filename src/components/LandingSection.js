@@ -5,8 +5,9 @@ import myphoto2 from '../images/myphoto2.jpg';
 import background from '../images/background.jpg';
  
 const greeting = "Hey, I am Aryan Sachdeva"; 
-const bio1 = "A frontend developer"; 
-const bio2 = "specialized in React"; 
+const bio1 = " A UI/UX Designer,"; 
+const bio2 = " and A Frontend Developer"; 
+const bio3 = "specialized in React"; 
 
 const LandingSection = () => ( 
  <FullScreenSection
@@ -14,7 +15,7 @@ const LandingSection = () => (
    alignItems="center" 
  > 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-   <VStack spacing={5} > 
+   <VStack id="landing-section" spacing={5} > 
      <VStack spacing={4} alignItems="center"> 
      <Avatar
       src={myphoto2} 
@@ -31,8 +32,8 @@ const LandingSection = () => (
      </Avatar>
      <Heading 
       height="50px"
-      color="black"
-      textShadow={"5px 3px 4px lightblue"} 
+      color="#000066"
+      textShadow={"3px 3px 6px lightblue"} 
        fontWeight="extrabold"
        fontFamily="space grotesk"
        fontStyle="normal" 
@@ -41,22 +42,35 @@ const LandingSection = () => (
          {greeting} 
        </Heading> 
      </VStack> 
-     <VStack spacing={1}> 
+     <VStack spacing={3}> 
        <Heading 
-       color="black"
+       sx={{
+        backgroundImage: '-webkit-linear-gradient(#c33764, #1d2671)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        fontSize: '36px', // Adjust as needed
+        fontWeight: 'bold', // Adjust as needed
+      }}
        fontFamily={"space grotesk"}
-       textShadow={"5px 3px 4px lightblue"} 
        as="h1" /* size="3xl" */ 
        noOfLines={2}> 
          {bio1} 
        </Heading> 
        <Heading 
-       color="black"
+       color="#000066"
        fontFamily={"space grotesk"}
-       textShadow={"5px 3px 4px lightblue"}
+       textShadow={"3px 3px 6px lightblue"}
        as="h1" /* size="3xl" */ 
        noOfLines={1}> 
          {bio2} 
+       </Heading> 
+       <Heading 
+       color="#000066"
+       fontFamily={"space grotesk"}
+       textShadow={"3px 3px 6px lightblue"}
+       as="h1" /* size="3xl" */ 
+       noOfLines={1}> 
+         {bio3} 
        </Heading> 
      </VStack> 
    </VStack> 

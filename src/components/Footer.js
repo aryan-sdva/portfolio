@@ -10,7 +10,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const socials = [ 
   { 
     icon: faEnvelope, 
@@ -36,56 +35,58 @@ const socials = [
 const Footer = () => { 
  return ( 
   <Grid    
-         pt={[3,3,3,3]}
-         pb={0}
-         color="whitesmoke" 
-         position={"relative"}
-         //bottom={10}
-         //wrap="wrap"
-         //fontFamily={"space grotesk"}
-         //fontWeight={"extrabold"}
-         //justifyContent="center" 
-         alignContent="space-between" 
-         w={["95vw","95vw","98vw","98vw"]}
-         ml={["2.5%","2.5%","1%","1%"]}
-         mb={2}
-         height={"15vh"} 
-         bgColor={"grey"}
-         //borderRadius={"0.5rem"}
-         >
-  
-          <Flex 
-          justify={"space-between"}
-          ml={5}
-          mr={5}
-          fontFamily={"space grotesk"}
-          fontWeight={"extrabold"}
-          fontSize={[20,18,20,25]}
-          >
-          <HStack justify={"center"} align={"start"}>
-          <h1>Socials:</h1>
-          {/* <h2>Reach out to me here <FaArrowAltCircleRight/></h2> */}
-          </HStack>
+  id="socials-section"
+  pt={[3,3,3,3]}
+  pb={0}
+  color="whitesmoke" 
+  position={"relative"}
+  alignContent="space-between" 
+  height={"13vh"} 
+  bgColor={"#093145"}
+  //bottom={10}
+  //wrap="wrap"
+  //fontFamily={"space grotesk"}
+  //fontWeight={"extrabold"}
+  //justifyContent="center" 
+  //w={["95vw","95vw","98vw","98vw"]}
+  //ml={["2.5%","2.5%","1%","1%"]}
+  //mb={2}
+  //borderRadius={"0.5rem"}
+  >
 
-          <HStack spacing={[3,4,4,5]}> 
-            {socials.map(({ icon, url}) => ( 
-              <a 
-                 key={url} 
-                 href={url} 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-              > 
-                <FontAwesomeIcon icon={icon} key={url} /> 
-              </a> 
-             ))} 
-          </HStack>
-          </Flex>
-          <Grid 
-          justifyContent={"center"}
-          alignContent={"center"}
-          fontSize={[16,16,18,20]}>
-          <p>Aryan Sachdeva • © 2024</p> 
-          </Grid>
+   <Flex 
+   justify={"space-between"}
+   ml={5}
+   mr={5}
+   fontFamily={"space grotesk"}
+   fontWeight={"extrabold"}
+   fontSize={[20,18,20,25]}
+
+   >
+   <HStack justify={"center"} align={"start"} color={""}>
+   <h1>Socials:</h1>
+   {/* <h2>Reach out to me here <FaArrowAltCircleRight/></h2> */}
+   </HStack>
+
+   <HStack spacing={[3,4,4,5]}> 
+     {socials.map(({ icon, url}) => ( 
+       <a 
+          key={url} 
+          href={url} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+       > 
+         <FontAwesomeIcon icon={icon} key={url} /> 
+       </a> 
+      ))} 
+   </HStack>
+   </Flex>
+   <Grid 
+   justifyContent={"center"}
+   alignContent={"center"}
+   fontSize={[16,16,18,20]}>
+   <p>Aryan Sachdeva • © 2024</p> 
+   </Grid>
 </Grid>
  );
 }; 

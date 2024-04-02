@@ -37,7 +37,7 @@ const socials = [
   }
  ]; 
 export default function MobileDrawer() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    const { isopen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef();
 
   return (
@@ -49,7 +49,7 @@ export default function MobileDrawer() {
       
 
       <DrawerExample
-        isOpen={isOpen}
+        isopen={isopen}
         onClose={onClose}
         finalFocusRef={btnRef}
       >
