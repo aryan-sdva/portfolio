@@ -33,7 +33,7 @@ const LandingSection = () => (
      <Heading 
       height="50px"
       color="#000066"
-      textShadow={"3px 3px 6px lightblue"} 
+      textShadow={"3px 3px 10px #c0d6e4"} 
        fontWeight="extrabold"
        fontFamily="space grotesk"
        fontStyle="normal" 
@@ -59,7 +59,7 @@ const LandingSection = () => (
        <Heading 
        color="#000066"
        fontFamily={"space grotesk"}
-       textShadow={"3px 3px 6px lightblue"}
+       textShadow={"3px 3px 10px #c0d6e4"}
        as="h1" /* size="3xl" */ 
        noOfLines={1}> 
          {bio2} 

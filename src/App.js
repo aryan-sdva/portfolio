@@ -20,12 +20,6 @@ function App() {
          <ProjectsSection/>
          <ContactMeSection/>
          <Footer/>
-         {/* <Routes>
-         <Route path="/" element={<LandingSection/>}/>
-         <Route path="/projects" element={<ProjectsSection/>}/>
-         <Route path="/contacts" component={<ContactMeSection/>}/>
-         <Route path="/socials" component={<Footer/>}/>
-         </Routes> */}
          <Alert/> 
          </main>
      </AlertProvider> 
