@@ -55,11 +55,12 @@ const ProjectsSection = () => {
      p={8} 
      alignItems="flex-start" 
      spacing={8}
+     maxWidth="1350px"
    > 
      <Heading as="h1" id="projects-section"> 
        Featured Projects 
      </Heading> 
-     <SimpleGrid columns={[1,1,2,3]} spacing={5}> 
+     <SimpleGrid columns={[1,1,2,3]} spacing={8}> 
        {projects.map((project) => ( 
          <Card 
            key={project.title} 

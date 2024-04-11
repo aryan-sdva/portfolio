@@ -57,15 +57,15 @@ const ContactMeSection = () => {
    <FullScreenSection 
      spacing={8} 
    > 
-      <VStack w="100vw" p={2} alignItems="flex-start"> 
-       <Heading as="h1" id="contactme-section" color={"black"}> 
+      <VStack w="100vw" p={2} id="contactme-section" fontFamily="kanit" alignItems="flex-start"> 
+       <Heading as="h1" color={"black"} ml={5}> 
          Contact Me: 
        </Heading> 
        <Box p={6} rounded="md" w="100%"> 
          <form onSubmit={formik.handleSubmit}> 
            <VStack spacing={4}> 
              <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}> 
-               <FormLabel htmlFor="firstName" color={"yellow"}>Name</FormLabel> 
+               <FormLabel htmlFor="firstName" color={"black"}>Name</FormLabel> 
                <Input 
                  id="firstName" 
                  name="firstName" 

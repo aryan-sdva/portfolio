@@ -1,0 +1,71 @@
+.cards{
+    color: black;
+    background-color: rgba(247,249,250,0.5);
+    cursor: grab;
+    border-radius: 20px;
+    height: 555px;
+    position: relative;
+}
+.cards:hover{
+    box-shadow: 2px 4px 10px rgba(0,0,0, 0.8);
+}
+
+.cardimage{
+    border-radius: 16px;
+    box-shadow: 3px 4px 10px rgba(48,55,71);
+}
+
+.description{
+    color: #0f5375;
+    font-weight: 800;
+    font-size: 17px;
+    font-family: space grotesk;
+    text-align: center;
+}
+button.button-29 {
+  position: absolute;
+  bottom: 10px;
+  /* align-items: center; */
+  appearance: none;
+  background-image: linear-gradient(to right, rgb(160, 125, 235), rgb(218, 121, 216));
+  /* border: 0; */
+  border-radius: 20px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  /* box-sizing: border-box; */
+  color: rgb(27, 21, 22);
+  background-color: #168bc1;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: kanit;
+  height: 42px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 15px;
+}
+
+button.button-29:focus {
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+}
+
+button.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  background-image: linear-gradient(to right, rgb(141, 99, 231), rgb(215, 86, 213));
+  transform: translateY(-2px);
+}
+
+button.button-29:active {
+  box-shadow: rgba(58, 65, 111, .5) 0 3px 7px inset;
+  transform: translateY(2px);
+}

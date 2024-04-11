@@ -1,79 +1,39 @@
 import React from "react"; 
-import { Avatar, Box, Circle, extendTheme, Heading, VStack } from "@chakra-ui/react"; 
+import { Avatar, Box, Circle, extendTheme, Heading, VStack, HStack} from "@chakra-ui/react"; 
 import FullScreenSection from "./FullScreenSection"; 
 import myphoto2 from '../images/myphoto2.jpg';
-import background from '../images/background.jpg';
+import '../styles/landing.css';
  
-const greeting = "Hey, I am Aryan Sachdeva"; 
-const bio1 = " A UI/UX Designer,"; 
-const bio2 = " and A Frontend Developer"; 
-const bio3 = "specialized in React"; 
+const greeting = "Aryan Sachdeva"; 
+const bio2 = "I'm a Frontend Developer, and a UI/UX Designer"; 
 
 const LandingSection = () => ( 
- <FullScreenSection
-   justifyContent="center" 
-   alignItems="center" 
- > 
+ <FullScreenSection className="fs-section"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-   <VStack id="landing-section" spacing={5} > 
-     <VStack spacing={4} alignItems="center"> 
-     <Avatar
-      src={myphoto2} 
-      alt={"logo"} 
-      name="Aryan Sachdeva" 
-      zIndex={50}
-      borderWidth={5}
-      borderColor={"whitesmoke"}
-      boxShadow={" 0px -25px 20px -20px rgba(0,0,0,0.7),25px 0px 20px -20px rgba(0,0,0,0.7),0px 25px 20px -20px rgba(0,0,0,1),-25px 0px 20px -20px rgba(0,0,0,0.7)"}
-      //width={["45%","30%","25%","25%"]}
-      //height={["45%","30%","25%","25%"]}
-      width={[180,200]} height={[180,200]}
-      >
-     </Avatar>
-     <Heading 
-      height="50px"
-      color="#000066"
-      textShadow={"3px 3px 10px #c0d6e4"} 
-       fontWeight="extrabold"
-       fontFamily="space grotesk"
-       fontStyle="normal" 
-       as="h4"
-       noOfLines={2}> 
-         {greeting} 
-       </Heading> 
-     </VStack> 
-     <VStack spacing={3}> 
-       <Heading 
-       sx={{
-        backgroundImage: '-webkit-linear-gradient(#c33764, #1d2671)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        fontSize: '36px', // Adjust as needed
-        fontWeight: 'bold', // Adjust as needed
-      }}
-       fontFamily={"space grotesk"}
-       as="h1" /* size="3xl" */ 
-       noOfLines={2}> 
-         {bio1} 
-       </Heading> 
-       <Heading 
-       color="#000066"
-       fontFamily={"space grotesk"}
-       textShadow={"3px 3px 10px #c0d6e4"}
-       as="h1" /* size="3xl" */ 
-       noOfLines={1}> 
+   
+  <HStack id="landing-section" className="landing-layout" spacing={40}>
+    <VStack pt={20} alignItems="center">
+      <Avatar className="photo" src={myphoto2} alt={"logo"} name="Aryan Sachdeva" w={[180,220]} h={[180,220]}></Avatar> 
+      <h1 className="name-heading">
+        {greeting}
+      </h1>
+      <p className="name-description">
+        A student currently pursuing a degree in computer science.
+        Always thriving on learning new skills and honing them to create a difference in the industry. 
+      </p>
+    </VStack> 
+     <VStack spacing={5}> 
+       <h1 className="description-heading"> 
          {bio2} 
-       </Heading> 
-       <Heading 
-       color="#000066"
-       fontFamily={"space grotesk"}
-       textShadow={"3px 3px 6px lightblue"}
-       as="h1" /* size="3xl" */ 
-       noOfLines={1}> 
-         {bio3} 
-       </Heading> 
+       </h1>
+       <p className="description-paragraph">
+        Being a frontend developer specializing in React and UI/UX design, 
+        My journey into coding started with a fascination for creating awesome web experiences,
+        and now I'm all about bringing ideas to life. From crafting dynamic web apps to polishing up user interfaces,
+        I'm here to blend creativity with code. Let's team up and turn ideas into reality!
+       </p>  
      </VStack> 
-   </VStack> 
+  </HStack>
 
  </FullScreenSection> 
 

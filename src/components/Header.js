@@ -1,12 +1,8 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack, AbsoluteCenter, transition, Collapse, useDisclosure, LinkBox } from "@chakra-ui/react";
-import { FaMoon } from "react-icons/fa";
+import { Link, Box, Flex, Text, Button, Stack} from "@chakra-ui/react";
+import { TbCodeCircle2 } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import { TiThMenu } from "react-icons/ti";
-import ProjectsSection from "../components/ProjectsSection";
-import newnew from "../images/newnew.jpg";
-import gradient from "../images/gradient.jpeg";
-import Logo from "../extra/Logo";
 
 const NavBar = (props) => {
   const [isopen, setisopen] = React.useState(false);
@@ -14,7 +10,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer isopen={isopen} {...props}>
-      <FaMoon size={28}/>
+      <TbCodeCircle2 size={35}/>
         <MenuToggle toggle={toggle} isopen={isopen}/>
       <MenuLinks isopen={isopen} />
     </NavBarContainer>
