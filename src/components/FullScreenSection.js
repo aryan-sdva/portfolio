@@ -1,9 +1,5 @@
 import * as React from "react"; 
 import { VStack, Box } from "@chakra-ui/react"; 
- import background2 from '../images/background2.jpeg';
- import newnew from '../images/newnew.jpg';
- import pattern from '../images/pattern.jpg';
- import hehe from '../images/hehe.jpg';
 /** 
 * Illustrates the use of children prop and spread operator 
 */ 

@@ -3,7 +3,61 @@
     align-items: center;
 }
 @media (max-width: 767px) {
-    /* Your CSS styles here */
+    .landing-layout{
+        display: grid;
+        padding-top: 30px;
+    }
+    .photo-bio{
+        padding-left: 28px;
+    }
+    .photo{
+        z-index: 50;
+        border-width: 5px;
+        border-color: whitesmoke;
+        box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.7),
+                    25px 0px 20px -20px rgba(0,0,0,0.7),
+                    0px 25px 20px -20px rgba(0,0,0,1),
+                    -25px 0px 20px -20px rgba(0,0,0,0.7);
+    }
+    .name-heading{
+        color: #000066;
+        text-shadow:3px 3px 10px #c0d6e4;
+        font-weight: bolder;
+        font-family:space grotesk;
+        font-style: normal;
+        font-size: 35px;
+    }
+    .name-description{
+        font-family: space grotesk;
+        font-size: 18px;
+        font-weight: 600;
+        width: 300px;
+        text-align: center;
+        padding-top: 0;
+    }
+    .description-heading{
+        line-height: 1.2;
+        font-size:28px;
+        font-family: space grotesk;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(to left, #e27e0b, #d21518);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        width: 300px;
+        text-align: center;
+    }
+    .description-paragraph{
+        padding-top: 10px;
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+        font-family: space grotesk;
+        font-weight: 600;
+        color: rgb(210, 199, 185);
+    }
+
   }
   
   /* CSS for screens between 768px and 992px */
@@ -18,6 +72,12 @@
   
   /* CSS for screens larger than 1200px */
   @media (min-width: 1200px) {
+    .landing-layout{
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .photo{
         z-index: 50;
         border-width: 5px;
@@ -44,17 +104,21 @@
         padding-top: 8px;
     }
     .description-heading{
-        font-size: 40px;
+        line-height: 1.2;
+        font-size:60px;
         font-family: space grotesk;
         font-weight: bold;
-        background: linear-gradient(to right, #4915cb, #d21518);
+        text-align: center;
+        margin-top: 20px;
+        background: linear-gradient(to left, #e27e0b, #d21518);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        text-align: right;
+        text-align: center;
         width: 900px;
     }
     .description-paragraph{
+        padding-top: 10px;
         font-size: 25px;
         text-align: center;
         width: 750px;
