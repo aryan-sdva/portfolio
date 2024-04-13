@@ -126,4 +126,10 @@
         font-weight: 600;
         color: rgb(210, 199, 185);
     }
+    .location{
+        font-size: 18px;
+        font-family: space grotesk;
+        color: #000066;
+        font-weight: 600;
+    }
   }

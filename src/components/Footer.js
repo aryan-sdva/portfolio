@@ -1,34 +1,30 @@
 import React from "react"; 
-import {Box, Flex, Grid, HStack, VStack} from "@chakra-ui/react";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { faEnvelope} from "@fortawesome/free-solid-svg-icons"; 
-import { 
- faGithub, 
- faInstagram, 
- faLinkedin,
- faTwitter, 
-} from "@fortawesome/free-brands-svg-icons"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Flex, Grid, HStack} from "@chakra-ui/react";
+import twitter from '../logos/twitter.png';
+import gmail from '../logos/gmail.png';
+import github from '../logos/github.png';
+import linkedin from '../logos/linkedin.png';
+import instagram from '../logos/instagram.png';
 
 const socials = [ 
   { 
-    icon: faEnvelope, 
+    icon: gmail, 
     url: "mailto: sachdevaaryan00@gmail.com", 
   }, 
   { 
-    icon: faGithub, 
+    icon: github, 
     url: "https://www.github.com/aryan-sdva", 
   }, 
   { 
-    icon: faLinkedin, 
+    icon: linkedin, 
     url: "https://www.linkedin.com/in/aryan-sachdeva-5a25551b4/", 
   }, 
   { 
-    icon: faInstagram, 
+    icon: instagram, 
     url: "https://www.instagram.com/ary.nn__/", 
   }, 
   {
-   icon: faTwitter,
+   icon: twitter,
    url: "https://twitter.com/AryanSdva/with_replies",
   }
  ]; 
@@ -65,18 +61,18 @@ const Footer = () => {
    >
    <HStack justify={"center"} align={"start"} color={""}>
    <h1>Socials:</h1>
-   {/* <h2>Reach out to me here <FaArrowAltCircleRight/></h2> */}
    </HStack>
 
-   <HStack spacing={[3,4,4,5]}> 
+   <HStack spacing={[3,4,4,3]}> 
      {socials.map(({ icon, url}) => ( 
        <a 
           key={url} 
           href={url} 
           target="_blank" 
           rel="noopener noreferrer" 
-       > 
-         <FontAwesomeIcon icon={icon} key={url} /> 
+          lineHeight="1.2"
+       >
+        <img src={icon} width={30} height={30} alt="social-logo"/>
        </a> 
       ))} 
    </HStack>

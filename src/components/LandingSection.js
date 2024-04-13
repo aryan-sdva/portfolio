@@ -3,6 +3,7 @@ import { Avatar, Box, Circle, extendTheme, Heading, VStack, HStack, Flex} from "
 import FullScreenSection from "./FullScreenSection"; 
 import myphoto2 from '../images/myphoto2.jpg';
 import '../styles/landing.css';
+import earth from '../images/earth.jpg';
  
 const greeting = "Aryan Sachdeva"; 
 
@@ -19,7 +20,11 @@ const LandingSection = () => (
       <p className="name-description">
       CSE-Student | Tech Geek | Inquisitive | Enthusiastic | Resilient | Football and F1 Fanatic | 
       </p>
-      <p>🌏 Bengaluru,India</p>
+    <HStack className="location">
+      <img src={earth} width={23} height={23} alt="earth logo"/>
+      <p>Bengaluru,India</p>
+      </HStack>
+    
     </VStack> 
      <VStack pt={[10,10,15,20]} ml={[0,0,0,20]}> 
        <h1 className="description-heading"> 

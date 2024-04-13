@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, Box, Flex, Text, Button, Stack} from "@chakra-ui/react";
-import { TbCodeCircle2 } from "react-icons/tb";
-import { IoClose } from "react-icons/io5";
-import { TiThMenu } from "react-icons/ti";
+import sun from '../logos/sun.png';
+import open from '../logos/open.png';
+import close from '../logos/close.png';
+
 
 const NavBar = (props) => {
   const [isopen, setisopen] = React.useState(false);
@@ -10,7 +11,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer isopen={isopen} {...props}>
-      <TbCodeCircle2 size={35}/>
+      <img src={sun} alt="sun-logo" height={30} width={30}/>
         <MenuToggle toggle={toggle} isopen={isopen}/>
       <MenuLinks isopen={isopen} />
     </NavBarContainer>
@@ -19,7 +20,7 @@ const NavBar = (props) => {
 const MenuToggle = ({ toggle, isopen }) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isopen ? <IoClose size={32}/> : <TiThMenu size={32}/>}
+      {isopen ? <img src={close} height={32} width={32} alt="menu-close"/> :<img src={open} height={32} width={32} alt="menu-open"/>}
     </Box>
   );
 };
