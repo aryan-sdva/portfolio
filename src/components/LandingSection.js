@@ -3,7 +3,7 @@ import { Avatar, Box, Circle, extendTheme, Heading, VStack, HStack, Flex} from "
 import FullScreenSection from "./FullScreenSection"; 
 import myphoto2 from '../images/myphoto2.jpg';
 import '../styles/landing.css';
-import earth from '../images/earth.jpg';
+import earth from '../logos/earth.jpg';
  
 const greeting = "Aryan Sachdeva"; 
 

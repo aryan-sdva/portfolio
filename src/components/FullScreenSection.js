@@ -11,7 +11,7 @@ const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   bgSize={"cover"} 
   bgPosition={"center"} 
   bgAttachment={"fixed"}  */
-  bgGradient='linear(to-l, #000000, #808080)'
+  bgGradient='linear(to-l, #2e3192, #1bffff)'
   >
   <VStack maxWidth="100vw" minHeight="100vh" {...boxProps}> 
     {children} 
