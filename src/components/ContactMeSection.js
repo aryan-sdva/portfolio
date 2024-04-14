@@ -56,49 +56,52 @@ const ContactMeSection = () => {
    <FullScreenSection 
      spacing={8} 
    > 
-      <VStack w="100vw" p={2} id="contactme-section" fontFamily="kanit" alignItems="flex-start"> 
-       <Heading as="h1" color={"black"} ml={5}> 
-         Contact Me: 
+      <VStack w="95vw" p={2} id="contactme-section" fontFamily="kanit" alignItems="flex-start"> 
+       <Heading as="h1" color={"#bcff1f"} ml={5}> 
+         Contact Me 
        </Heading> 
        <Box p={6} rounded="md" w="100%"> 
          <form onSubmit={formik.handleSubmit}> 
            <VStack spacing={4}> 
              <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}> 
-               <FormLabel htmlFor="firstName" color={"black"}>Name</FormLabel> 
+               <FormLabel htmlFor="firstName" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Name</FormLabel> 
                <Input 
                  id="firstName" 
                  name="firstName" 
                  {...formik.getFieldProps("firstName")} 
+                 color={"beige"} fontFamily="cabin" fontSize={20}
                /> 
                <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage> 
              </FormControl> 
              <FormControl isInvalid={!!formik.errors.email && formik.touched.email}> 
-               <FormLabel htmlFor="email">Email Address</FormLabel> 
+               <FormLabel htmlFor="email" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Email Address</FormLabel> 
                <Input 
                  id="email" 
                  name="email" 
                  type="email" 
                  {...formik.getFieldProps("email")} 
+                 color={"beige"} fontFamily="cabin" fontSize={20}
                /> 
                <FormErrorMessage>{formik.errors.email}</FormErrorMessage> 
              </FormControl> 
              <FormControl> 
-               <FormLabel htmlFor="type">Type of enquiry</FormLabel> 
-               <Select id="type" name="type" {...formik.getFieldProps("type")}> 
-                 <option value="hireMe">Freelance project proposal</option> 
-                 <option value="openSource"> 
+               <FormLabel htmlFor="type" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Type of enquiry</FormLabel> 
+               <Select id="type" name="type" color={"beige"} fontFamily="cabin" fontSize={20}{...formik.getFieldProps("type")}> 
+                 <option value="hireMe" color={"beige"} fontFamily="cabin">Freelance project proposal</option> 
+                 <option value="openSource" color={"beige"} fontFamily="cabin"> 
                    Open source consultancy session 
                  </option> 
-                 <option value="other">Other</option> 
+                 <option value="other" color={"beige"} fontFamily="cabin">Other</option> 
                </Select> 
              </FormControl> 
              <FormControl isInvalid={!!formik.errors.comment && formik.touched.comment}> 
-               <FormLabel htmlFor="comment">Your message</FormLabel> 
+               <FormLabel htmlFor="comment" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Your message</FormLabel> 
                <Textarea 
                  id="comment" 
                  name="comment" 
                  height={250} 
                  {...formik.getFieldProps("comment")} 
+                 color={"beige"} fontFamily="cabin" fontSize={20}
                /> 
                <FormErrorMessage>{formik.errors.comment}</FormErrorMessage> 
              </FormControl> 

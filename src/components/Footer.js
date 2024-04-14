@@ -38,7 +38,7 @@ const Footer = () => {
   position={"relative"}
   alignContent="space-between" 
   height={"13vh"} 
-  bgColor={"#093145"}
+  bgColor="#191a1c"
   //bottom={10}
   //wrap="wrap"
   //fontFamily={"space grotesk"}
@@ -63,7 +63,7 @@ const Footer = () => {
    <h1>Socials:</h1>
    </HStack>
 
-   <HStack spacing={[3,4,4,3]}> 
+   <HStack spacing={[2,4,4,3]}> 
      {socials.map(({ icon, url}) => ( 
        <a 
           key={url} 
@@ -72,7 +72,7 @@ const Footer = () => {
           rel="noopener noreferrer" 
           lineHeight="1.2"
        >
-        <img src={icon} width={30} height={30} alt="social-logo"/>
+        <img src={icon} width={27} height={27} alt="social-logo"/>
        </a> 
       ))} 
    </HStack>

@@ -3,6 +3,7 @@ import { Link, Box, Flex, Text, Button, Stack} from "@chakra-ui/react";
 import sun from '../logos/sun.png';
 import open from '../logos/open.png';
 import close from '../logos/close.png';
+import code from '../logos/code.png';
 
 
 const NavBar = (props) => {
@@ -11,7 +12,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer isopen={isopen} {...props}>
-      <img src={sun} alt="sun-logo" height={30} width={30}/>
+      <img src={code} alt="sun-logo" height={30} width={30}/>
         <MenuToggle toggle={toggle} isopen={isopen}/>
       <MenuLinks isopen={isopen} />
     </NavBarContainer>

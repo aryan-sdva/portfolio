@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .iconss{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Your CSS styles here */
+  }
+  
+  /* CSS for screens between 992px and 1200px */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Your CSS styles here */
+  }
+  
+  /* CSS for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .iconss{
+        width: 30px;
+        height: 30px;
+    }
+  }

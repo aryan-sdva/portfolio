@@ -3,23 +3,24 @@
     background-color: rgba(247,249,250,0.5);
     cursor: grab;
     border-radius: 20px;
-    height: 555px;
+    height: 580px;
     position: relative;
 }
 .cards:hover{
-    box-shadow: 2px 4px 10px rgba(0,0,0, 0.8);
+    box-shadow: 6px 6px 4px rgba(255, 255, 255, 0.8);
 }
 
 .cardimage{
     border-radius: 16px;
     box-shadow: 3px 4px 10px rgba(48,55,71);
+    border: 5px solid rgba(247,249,250,0.5);
 }
 
 .description{
-    color: #0f5375;
-    font-weight: 800;
+    color: #1b0986;
+    font-weight: 900;
     font-size: 17px;
-    font-family: space grotesk;
+    font-family: dm sans;
     text-align: center;
 }
 button.button-29 {
@@ -68,4 +69,22 @@ button.button-29:hover {
 button.button-29:active {
   box-shadow: rgba(58, 65, 111, .5) 0 3px 7px inset;
   transform: translateY(2px);
+}
+@media (max-width: 767px) {
+  .project-heading{
+    font-size: 20px;
+    font-family: prompt;
+    font-weight: 700;
+    color: #21251f;
+  }
+}
+
+@media (min-width: 1200px) {
+.project-heading{
+  font-size: 24px;
+  font-family: prompt;
+  font-weight: 700;
+  color: #21251f;
+  
+}
 }

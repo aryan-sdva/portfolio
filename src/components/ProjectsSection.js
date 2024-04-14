@@ -4,13 +4,7 @@ import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 import Card from "./Card"; 
 
 const projects = [ 
- { 
-   title: "Basic Calculator", 
-   description: 
-     "Built with React, this basic calculator offers instant arithmetic calculations. Having a user-friendly interface, with support for addition, subtraction, multiplication, and division, it's a handy tool for quick calculations.", 
-   getImageSrc: () => require("../images/calc.jpg"), 
-   link: "https://basic-calculator-beta.vercel.app",
- }, 
+ 
  { 
    title: "First application of HTML/CSS", 
    description:
@@ -19,33 +13,40 @@ const projects = [
    link:"https://epl-players.vercel.app",
  }, 
  { 
-   title: "Photo Gallery", 
+   title: "Cursor Position Tracker", 
    description: 
-     "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income", 
-   getImageSrc: () => require("../images/calc.jpg"), 
-   link: "https://www.calculator.net",
+     "This React component, named CursorTracker, provides real-time tracking of the cursor position within its containing element. It utilizes React's functional component syntax along with the useState hook to manage the cursor position state.",
+   getImageSrc: () => require("../images/postrack.png"), 
+   link: "https://position-tracker.vercel.app",
  }, 
+ { 
+  title: "Basic Calculator", 
+  description: 
+    "Built with React, this basic calculator offers instant arithmetic calculations. Having a user-friendly interface, with support for addition, subtraction, multiplication, and division, it's a handy tool for quick calculations.", 
+  getImageSrc: () => require("../images/calc.png"), 
+  link: "https://basic-calculator-beta.vercel.app",
+}, 
  { 
    title: "Event planner", 
    description: 
      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps", 
-   getImageSrc: () => require("../images/calc.jpg"), 
+   getImageSrc: () => require("../images/calc.png"), 
    link: "https://www.calculator.net",
  }, 
  { 
   title: "React Space", 
   description: 
     "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
-  getImageSrc: () => require("../images/calc.jpg"), 
+  getImageSrc: () => require("../images/calc.png"), 
   link: "https://www.calculator.net",
 }, 
 { 
   title: "React Space", 
   description: 
     "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
-  getImageSrc: () => require("../images/calc.jpg"), 
+  getImageSrc: () => require("../images/calc.png"), 
   link: "https://www.calculator.net",
-}, 
+},
 ]; 
  
 const ProjectsSection = () => { 
@@ -54,9 +55,8 @@ const ProjectsSection = () => {
      p={8} 
      alignItems="flex-start" 
      spacing={8}
-     maxWidth="1350px"
    > 
-     <Heading as="h1" id="projects-section"> 
+     <Heading as="h1" id="projects-section" color="#bcff1f"> 
        Featured Projects 
      </Heading> 
      <SimpleGrid columns={[1,1,2,3]} spacing={8}> 
