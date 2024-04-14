@@ -8,11 +8,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .full-screen{
+        background-image: url('../images/m-wallpaper.jpg');
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
-
+    .full-screen{
+        background-image: url('../images/wallpaper2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
   }
   
 
@@ -22,7 +32,5 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* bgColor="grey"
-    bgGradient='linear(to-r, #0b1629, #1bffff)' */
     }
 }

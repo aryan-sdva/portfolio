@@ -8,7 +8,7 @@ const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   //const isSafari= /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
  return ( 
   <VStack className="full-screen">
-  <VStack maxWidth="1280px" minHeight="100vh" {...boxProps}> 
+  <VStack maxWidth="100vw" minHeight="100vh" {...boxProps}> 
     {children} 
   </VStack> 
 </VStack> 
