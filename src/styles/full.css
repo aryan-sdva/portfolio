@@ -9,7 +9,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .full-screen{
-        background-image: url('../images/m.hihi.jpg');
+        background-image: url('../images/hihi.jpg');
         background-size:contain;
         background-position: center;
         background-attachment: fixed;
