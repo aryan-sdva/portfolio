@@ -1,6 +1,7 @@
 .fs-section{
     justify-content: center;
     align-items: center;
+
 }
 
 @media (max-width: 767px) {
@@ -8,9 +9,6 @@
         display: grid;
         padding-top: 30px;
 
-    }
-    .photo-bio{
-        padding-left: 0;
     }
     .photo{
         z-index: 50;
@@ -151,7 +149,7 @@
         padding-top: 10%;
         padding-left: 0;
         padding-right: 0;
-        width: 100vw;
+        max-width: 100vw;
     }
     
     .photo{
@@ -219,11 +217,16 @@
   @media (min-width: 1200px) {
     .landing-layout{
         display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
         padding-top: 5%;
-        /* padding-left: 15%; */
+        max-width: 100vw;
+        /* padding-left: 6vw; */
         /* padding-right: 10%; */
     }
-    
+    .photo-bio{
+        margin-left: 4vw;
+    }
     .photo{
         z-index: 50;
         border-width: 5px;
@@ -238,16 +241,19 @@
         font-weight: bolder;
         font-family:space grotesk;
         font-style: normal;
-        font-size: 35px;
+        font-size: 28px;
     }
     .name-description{
         font-family: dm sans;
         font-size: 18px;
         color: beige;
         font-weight: 900;
-        width: 300px;
+        width: 220px;
         text-align: center;
         padding-top: 8px;
+    }
+    .description-block{
+        margin-left: 5vw;
     }
     .description-heading{
         line-height: 1.2;
@@ -267,7 +273,7 @@
         padding-top: 10px;
         font-size: 25px;
         text-align: center;
-        width: 750px;
+        width: 650px;
         font-family: space grotesk;
         font-weight: 600;
         color: rgb(230, 230, 215);

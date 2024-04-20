@@ -9,7 +9,7 @@ const Card = ({ title, description, imageSrc, url }) => {
       <Box p={4}>
         <Image className="cardimage" src={imageSrc} alt={title}/>
       </Box>
-      <VStack spacing={4} pt={1} pr={4} pl={4}>
+      <VStack spacing={4} pt={1}>
         <HStack>
           <p className="project-heading">
             {title} 
