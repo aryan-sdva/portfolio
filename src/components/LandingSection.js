@@ -6,6 +6,7 @@ import '../styles/landing.css';
 import earth from '../logos/earth.jpg';
 import reactlogo from '../logos/react-logo.png';
 import chakraui from '../logos/chakraui.png';
+import figma from '../logos/figma.png';
  
 const greeting = "Aryan Sachdeva"; 
 
@@ -35,7 +36,7 @@ const LandingSection = () => (
        <p className="description-paragraph">
        As a frontend developer with a focus on React <img src={reactlogo} className="inline-logo"/> and UI/UX design, 
        my journey into coding was ignited by a passion for crafting exceptional web experiences. 
-       I specialize in utilizing the Chakra UI <img src={chakraui} className="inline-logo"/> library alongside React to create dynamic and visually appealing web applications,
+       I specialize in utilizing the Chakra UI <img src={chakraui} className="inline-logo"/> library alongside React and Figma<img src={figma} className="inline-logo"/> for designing the UI/UX, to create dynamic and visually appealing web applications,
        and now I'm constantly seeking opportunities to enhance my expertise and elevate my craft.
        </p>  
      </VStack> 

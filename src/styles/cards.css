@@ -3,7 +3,7 @@
     background-color: rgba(247,249,250,0.5);
     cursor: grab;
     border-radius: 20px;
-    height: 580px;
+    height: 600px;
     position: relative;
 }
 .cards:hover{
@@ -14,15 +14,6 @@
     border-radius: 16px;
     box-shadow: 3px 4px 10px rgba(48,55,71);
     border: 5px solid rgba(247,249,250,0.5);
-}
-
-.description{
-    color: #1b0986;
-    font-weight: 900;
-    font-size: 17px;
-    width: 300px;
-    font-family: dm sans;
-    text-align: center;
 }
 button.button-29 {
   position: absolute;
@@ -79,7 +70,38 @@ button.button-29:active {
     color: #21251f;
   }
 }
-
+@media (min-width: 768px) and (max-width: 991px){
+  .project-heading{
+    font-size: 20px;
+    font-family: prompt;
+    font-weight: 700;
+    color: #21251f;
+  }
+  .description{
+    color: #1b0986;
+    font-weight: 900;
+    font-size: 17px;
+    width: 280px;
+    font-family: dm sans;
+    text-align: center;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .project-heading{
+    font-size: 20px;
+    font-family: prompt;
+    font-weight: 700;
+    color: #21251f;
+  }
+  .description{
+    color: #1b0986;
+    font-weight: 900;
+    font-size: 17px;
+    width: 260px;
+    font-family: dm sans;
+    text-align: center;
+}
+}
 @media (min-width: 1200px) {
 .project-heading{
   font-size: 24px;
@@ -87,5 +109,13 @@ button.button-29:active {
   font-weight: 700;
   color: #21251f;
   
+}
+.description{
+  color: #1b0986;
+  font-weight: 900;
+  font-size: 17px;
+  width: 300px;
+  font-family: dm sans;
+  text-align: center;
 }
 }

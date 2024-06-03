@@ -11,7 +11,13 @@ const projects = [
     "This HTML and CSS file marked my early steps in web development. I crafted a basic layout using HTML tags and styled it with CSS, delving into selectors to customize colors, fonts, and layout, igniting my journey into the world of web development.",
    getImageSrc: () => require("../images/epl.jpg"), 
    link:"https://epl-players.vercel.app",
- }, 
+ },
+ {title: "Advanced use of HTML tags", 
+  description: 
+    "Here, is thsi file, different types of components have been used. Like radio buttons, slider, date input etc. And also embedded iframe codes of YouTube video and Spotify songs are also used.", 
+  getImageSrc: () => require("../images/xyz.png"), 
+  link: "https://htmltagadvanced.netlify.app", 
+},
  { 
    title: "Cursor Position Tracker", 
    description: 
@@ -27,26 +33,19 @@ const projects = [
   link: "https://basic-calculator-beta.vercel.app",
 }, 
  { 
-   title: "Event planner", 
+   title: "Application Prototype(Figma)", 
    description: 
-     "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps", 
-   getImageSrc: () => require("../images/calc.png"), 
-   link: "https://www.calculator.net",
+     "Built in Figma, this is a prototype of the UI/UX for a table booking application for  a restaurant. Made using wireframes, interactive components and prototyping for navigation flow  between multiple screens.", 
+   getImageSrc: () => require("../images/phone.png"), 
+   link: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/9hVSlZiioh4dKesIWD4C1u/Little-Lemon-wireframes?page-id=0%3A1&node-id=1-36&viewport=94%2C214%2C0.32&t=S2MdvgXj6EENxqvv-1&scaling=scale-down&starting-point-node-id=1%3A36"
  }, 
  { 
-  title: "React Space", 
+  title: "Account Setup Page", 
   description: 
-    "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
-  getImageSrc: () => require("../images/calc.png"), 
-  link: "https://www.calculator.net",
+    "A normal initial account setup page that could be used for any website setup, made by using basic HTML tags and using the useState hook in React to manage the reseting of the form fields, after submitting the details.", 
+  getImageSrc: () => require("../images/account.png"), 
+  link: "https://accountloginpage.netlify.app",
 }, 
-{ 
-  title: "React Space", 
-  description: 
-    "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️", 
-  getImageSrc: () => require("../images/calc.png"), 
-  link: "https://www.calculator.net",
-},
 ]; 
  
 const ProjectsSection = () => { 
@@ -55,6 +54,7 @@ const ProjectsSection = () => {
      p={8} 
      alignItems="flex-start" 
      spacing={8}
+     width={["100vw","95vw","90vw","90vw"]}
    > 
      <Heading as="h1" id="projects-section" color="#bcff1f"> 
        Featured Projects 
