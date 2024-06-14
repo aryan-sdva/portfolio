@@ -61,7 +61,7 @@ const ContactMeSection = () => {
          Contact Me 
        </Heading> 
        <Box p={6} rounded="md" w="100%"> 
-         <form onSubmit={formik.handleSubmit}> 
+         <form action="https://api.sheetmonkey.io/form/dY9sLXhC71nuXRReksJiGE" method="POST"> 
            <VStack spacing={4}> 
              <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}> 
                <FormLabel htmlFor="firstName" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Name</FormLabel> 
@@ -87,11 +87,11 @@ const ContactMeSection = () => {
              <FormControl> 
                <FormLabel htmlFor="type" color={"beige"} fontFamily="cabin" fontWeight={900} fontSize={20}>Type of enquiry</FormLabel> 
                <Select id="type" name="type" color={"beige"} fontFamily="cabin" fontSize={20}{...formik.getFieldProps("type")}> 
-                 <option value="hireMe" color={"beige"} fontFamily="cabin">Freelance project proposal</option> 
-                 <option value="openSource" color={"beige"} fontFamily="cabin"> 
-                   Open source consultancy session 
+                 <option value="Freelance Project Proposal" color={"beige"} fontFamily="cabin">Freelance project proposal</option> 
+                 <option value="UI/UX Design project" color={"beige"} fontFamily="cabin"> 
+                   UI/UX Design project 
                  </option> 
-                 <option value="other" color={"beige"} fontFamily="cabin">Other</option> 
+                 <option value="Other" color={"beige"} fontFamily="cabin">Other</option> 
                </Select> 
              </FormControl> 
              <FormControl isInvalid={!!formik.errors.comment && formik.touched.comment}> 

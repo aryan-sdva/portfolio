@@ -1,6 +1,6 @@
 .cards{
     color: black;
-    background-color: rgba(247,249,250,0.5);
+    background-color: rgba(162, 166, 166, 0.8);
     cursor: grab;
     border-radius: 20px;
     height: 600px;
@@ -69,6 +69,14 @@ button.button-29:active {
     font-weight: 700;
     color: #21251f;
   }
+  .description{
+    color: #1b0986;
+    font-weight: 900;
+    font-size: 17px;
+    width: 280px;
+    font-family: dm sans;
+    text-align: center;
+}
 }
 @media (min-width: 768px) and (max-width: 991px){
   .project-heading{
