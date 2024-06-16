@@ -14,7 +14,7 @@ const projects = [
  },
  {title: "Advanced use of HTML tags", 
   description: 
-    "Here, is thsi file, different types of components have been used. Like radio buttons, slider, date input etc. And also embedded iframe codes of YouTube video and Spotify songs are also used.", 
+    "Here, in this file, different types of components have been used. Like radio buttons, slider, date input etc. And also embedded iframe codes of YouTube video and Spotify songs are also used.", 
   getImageSrc: () => require("../images/xyz.png"), 
   link: "https://htmltagadvanced.netlify.app", 
 },
