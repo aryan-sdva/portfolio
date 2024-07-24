@@ -45,7 +45,14 @@ const projects = [
     "A normal initial account setup page that could be used for any website setup, made by using basic HTML tags and using the useState hook in React to manage the reseting of the form fields, after submitting the details.", 
   getImageSrc: () => require("../images/account.png"), 
   link: "https://accountloginpage.netlify.app",
-}, 
+},
+{ 
+  title: "Food Delivery Website", 
+  description: 
+    "This is a prototype for a food delivery website made in Figma. This cloud kitchen based business is located in Kanpur. This prototype has all the button functionalities, overlays and animations as required by the client", 
+  getImageSrc: () => require("../images/tbs.png"), 
+  link: "https://www.figma.com/proto/o3BXOfV6AssZ4DCwcGnIIJ/TBS-KITCHEN-Interface?node-id=76-316&t=8C7vCeGbXUXT4A6u-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A316",
+},  
 ]; 
  
 const ProjectsSection = () => { 
