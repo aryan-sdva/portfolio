@@ -6,6 +6,27 @@ import Card from "./Card";
 const projects = [ 
  
   { 
+  title: "Food Delivery Website", 
+  description: 
+    "This is a prototype for a food delivery website made in Figma. This cloud kitchen based business is located in Kanpur. This prototype has all the button functionalities, overlays and animations as required by the client", 
+  getImageSrc: () => require("../images/tbs.png"), 
+  link: "https://www.figma.com/proto/o3BXOfV6AssZ4DCwcGnIIJ/TBS-KITCHEN-Interface?node-id=76-316&t=8C7vCeGbXUXT4A6u-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A316",
+},
+{ 
+  title: "Cursor Position Tracker", 
+  description: 
+    "This React component, named CursorTracker, provides real-time tracking of the cursor position within its containing element. It utilizes React's functional component syntax along with the useState hook to manage the cursor position state.",
+  getImageSrc: () => require("../images/postrack.png"), 
+  link: "https://position-tracker.vercel.app",
+},
+ { 
+  title: "Account Setup Page", 
+  description: 
+    "A normal initial account setup page that could be used for any website setup, made by using basic HTML tags and using the useState hook in React to manage the reseting of the form fields, after submitting the details.", 
+  getImageSrc: () => require("../images/account.png"), 
+  link: "https://accountloginpage.netlify.app",
+},
+{ 
     title: "Basic Calculator", 
     description: 
       "Built with React, this basic calculator offers instant arithmetic calculations. Having a user-friendly interface, with support for addition, subtraction, multiplication, and division, it's a handy tool for quick calculations.", 
@@ -19,13 +40,7 @@ const projects = [
   getImageSrc: () => require("../images/phone.png"), 
   link: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/9hVSlZiioh4dKesIWD4C1u/Little-Lemon-wireframes?page-id=0%3A1&node-id=1-36&viewport=94%2C214%2C0.32&t=S2MdvgXj6EENxqvv-1&scaling=scale-down&starting-point-node-id=1%3A36"
 },
-{ 
-  title: "Cursor Position Tracker", 
-  description: 
-    "This React component, named CursorTracker, provides real-time tracking of the cursor position within its containing element. It utilizes React's functional component syntax along with the useState hook to manage the cursor position state.",
-  getImageSrc: () => require("../images/postrack.png"), 
-  link: "https://position-tracker.vercel.app",
-}, 
+, 
 { 
   title: "First application of HTML/CSS", 
   description:
@@ -39,20 +54,7 @@ const projects = [
   getImageSrc: () => require("../images/xyz.png"), 
   link: "https://htmltagadvanced.netlify.app", 
 },
- { 
-  title: "Account Setup Page", 
-  description: 
-    "A normal initial account setup page that could be used for any website setup, made by using basic HTML tags and using the useState hook in React to manage the reseting of the form fields, after submitting the details.", 
-  getImageSrc: () => require("../images/account.png"), 
-  link: "https://accountloginpage.netlify.app",
-},
-{ 
-  title: "Food Delivery Website", 
-  description: 
-    "This is a prototype for a food delivery website made in Figma. This cloud kitchen based business is located in Kanpur. This prototype has all the button functionalities, overlays and animations as required by the client", 
-  getImageSrc: () => require("../images/tbs.png"), 
-  link: "https://www.figma.com/proto/o3BXOfV6AssZ4DCwcGnIIJ/TBS-KITCHEN-Interface?node-id=76-316&t=8C7vCeGbXUXT4A6u-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A316",
-},  
+  
 ]; 
  
 const ProjectsSection = () => { 
