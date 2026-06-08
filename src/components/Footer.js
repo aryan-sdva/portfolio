@@ -81,7 +81,7 @@ const Footer = () => {
    justifyContent={"center"}
    alignContent={"center"}
    fontSize={[16,16,18,20]}>
-   <p>Aryan Sachdeva • © 2025</p> 
+   <p>Aryan Sachdeva • © 2026</p> 
    </Grid>
 </Grid>
  );
