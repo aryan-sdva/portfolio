@@ -6,9 +6,9 @@ import Card from "./Card";
 const projects = [ 
  
 { 
-  title: "TaskFlow - Full Stack Task Management System", 
+  title: "TaskFlow: Full Stack Task Manager", 
   description: 
-    "Developed a full-stack task management application using Angular, Node.js, Express.js, and MongoDB Atlas. The project features secure JWT-based authentication, RESTful APIs, task CRUD operations, dashboard analytics, and a responsive Angular Material UI. Deployed on Vercel and Render with cloud-hosted backend and database integration.",
+    "Developed a full-stack Task Management application using Angular, Node.js, Express.js, and MongoDB Atlas. Features secure JWT authentication, RESTful APIs, task CRUD operations, responsive UI with Angular Material, and cloud deployment on Vercel and Render.",
   getImageSrc: () => require("../images/dash.png"), 
   link: "https://binaried-assignment-ashen.vercel.app/register",
 },{ 
