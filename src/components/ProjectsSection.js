@@ -6,7 +6,7 @@ import Card from "./Card";
 const projects = [ 
  
 { 
-  title: "TaskFlow: Full Stack Task Manager", 
+  title: "TaskFlow", 
   description: 
     "Developed a full-stack Task Management application using Angular, Node.js, Express.js, and MongoDB Atlas. Features secure JWT authentication, RESTful APIs, task CRUD operations, responsive UI with Angular Material, and cloud deployment on Vercel and Render.",
   getImageSrc: () => require("../images/dash.png"), 
