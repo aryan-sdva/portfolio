@@ -5,7 +5,13 @@ import Card from "./Card";
 
 const projects = [ 
  
-  { 
+{ 
+  title: "TaskFlow - Full Stack Task Management System", 
+  description: 
+    "Developed a full-stack task management application using Angular, Node.js, Express.js, and MongoDB Atlas. The project features secure JWT-based authentication, RESTful APIs, task CRUD operations, dashboard analytics, and a responsive Angular Material UI. Deployed on Vercel and Render with cloud-hosted backend and database integration.",
+  getImageSrc: () => require("../images/dash.png"), 
+  link: "https://binaried-assignment-ashen.vercel.app/register",
+},{ 
   title: "Food Delivery Website", 
   description: 
     "This is a prototype for a food delivery website made in Figma. This cloud kitchen based business is located in Kanpur. This prototype has all the button functionalities, overlays and animations as required by the client", 
